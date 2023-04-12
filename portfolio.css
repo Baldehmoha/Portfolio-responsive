@@ -1,0 +1,416 @@
+body{
+    padding: 0 2%;
+    margin: 0;
+}
+
+.html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0; 
+}
+nav .profil{
+    display: flex;
+    align-items: center;
+}
+nav .profil img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+nav .profil h1{
+    margin-left: 10px;
+    font-size: 20px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin-left: 60px;
+    cursor: pointer;
+    border-bottom: 1px solid blanchedalmond;
+}
+nav ul li:hover{
+    border-bottom-color: black;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    nav {
+            justify-content: center;
+        }
+        .profil{
+            align-items: center;
+        }
+        .profil.img{
+            width: 100%;
+            height: 80%;
+        }
+    
+        nav ul {
+            display: none;
+        }
+    
+        .page-content-header {
+            margin-top: 10%;
+            max-width: 70%;
+        }
+
+        .Section-Expérience{
+            width: 100%;
+        }
+    
+        .Experience {
+                width: 250px;
+                height: 200px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+        
+        
+            }
+        
+            .Experience1 {
+                margin: 5px;
+                width: 90%;
+                height: 80px;
+                
+                
+                
+                
+                
+            }
+            
+        
+
+}
+
+
+
+
+
+    
+
+
+.page-content{
+    margin: 4%;
+}
+.page-content header{
+    margin-top: 5%;
+    max-width: 100%;
+}
+.page-content header h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+.page-content header p{
+    line-height: 30px;
+    color: #818181;
+}
+@media screen and (max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .page-content-header{
+        margin-top: 10%;
+        max-width: 100%;
+    }
+}
+
+
+.section-formation{
+    margin-top: 2%;
+   
+    
+}
+.formations1{
+    background-color: black;
+    width: 250px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+.formations{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section-competence{
+    margin: 4%;
+}
+
+.competence1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bar-pourcentage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar{
+    width: 300px;
+    height: 25px;
+    background-color: rgb(16, 161, 238);
+}
+.progress-bar{
+    width: 250px;
+    height: 20px;
+    background-color: red;
+    margin-top: 20px;
+}
+.pourcentage{
+    margin-left: -35px;
+}
+.sub-title{
+    margin: 4%;
+}
+.qualités-list{
+    margin: 4%;
+}
+
+.qualités-list{
+    width: 90%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 900px);
+    background-color: blanchedalmond;
+}
+.qualités-list img{
+    width: 250px;
+    height: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .page-content-header {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+    .qualités-list img{
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+
+.Section-Expérience{
+    margin: 4%;
+}
+.Experience1{
+    background-color: gray;
+    width: 400px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+.Experience{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .page-content-header {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+    
+
+    .qualités-list img {
+        width: 80%;
+        height: auto;
+
+    }
+    .Section-Expérience{
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .Experience{
+        margin-top: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+        
+        
+    }
+    .Experience1{
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .section-formation{
+        margin: 4%;
+    }
+    .formations{
+        margin-bottom: auto;
+    }
+    .formations1{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+}
+
+
+
+.Section-Reférence{
+    margin: 4%;
+}
+
+.reférences{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    
+
+.Reférence1{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: grey;
+    color: whitesmoke;
+    text-align:center
+    
+}
+.cable{
+    margin: 10px;
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cable img{
+    margin-bottom: 10px;
+    width: 800px;
+    height: 200px;
+    border-radius: 10px;
+}
+.tel{
+    text-align: center;
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .page-content-header {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+    
+
+    .qualités-list img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    }
+
+
+
+    .Section-Expérience{
+        margin: 20%;
+    }
+
+    .Experience {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px;
+
+
+    }
+
+    .Experience1 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .reférences{
+        margin-top: 5%;
+    }
+    
+
+
+
+
+
+
+
+
+.footer{
+    margin-top: 4%;
+    margin: 4%;
+}
+.colonne{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.colonne p{
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+.colonne p:hover{
+    color: blanchedalmond;
+}
+
+
